@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>study2</title>
+</head>
+<body>
+    
+    <a href="https://developer.mozilla.org/zh-CN/">MDN Web 文档</a>
+
+    <table border="1" width="300" height="100" align="center">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>周浩</td>
+                <td>男</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td rowspan="2">跨行</td>
+                <td colspan="2">跨列</td>
+            </tr>
+            <tr height=30>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>通用程序设计语言</h4>
+    <ul>
+        <li>Java</li>
+        <li>js</li>
+        <li>C++</li>
+    </ul>
+
+    <h4>占有率</h4>
+    <ol>
+        <li>Java</li>
+        <li>C++</li>
+        <li>js</li>
+    </ol>
+
+    <dl>
+        <dt>关注我们</dt>
+        <dd>新浪微博</dd>
+        <dd>官方微信</dd>
+        <dd>联系我们</dd>
+    </dl>
+
+    <form action="index.html" method="GET" >
+        用户名：<input type="text" name="username"> <br>
+        密码：<input type="password" name="password" maxlength="16"> <br>
+        性别：
+            <label for="man">男</label>
+            <input type="radio" name="sex" id="man" checked="checked" value="男">    
+            <label for="woman">女</label>
+            <input type="radio" name="sex" id="woman" value="女"> 
+            <br> 
+        爱好：吃饭<input type="checkbox" name="hobby" value="吃饭"> 睡觉<input type="checkbox" name="hobby" value="睡觉"> <br>
+        城市：
+            <select name="city">
+                <option value="beijing">北京</option>
+                <option value="shanghai">西安</option>
+                <option value="xian">上海</option>
+            </select> <br>
+        手机号：<input type="text"> <input type="button" value="发送短信验证码"> <br>
+        头像：<input type="file"> <br>
+        个人介绍：<input type="textarea" value="请输入自我介绍"> <br>
+        <input type="reset"> <input type="submit" value="注册">
+    </form>
+
+
+</body>
+</html>
