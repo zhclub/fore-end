@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            /* text-indent: 20px; */
+            text-indent: 2em;
+        }
+
+        .p1 {
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .p2 {
+            font-style: italic;
+        }
+
+        .p3 {
+            /* font: font-style font-weight font-size/line-height font-family */
+            font: italic 800 25px/10px Helvetica;
+        }
+
+        #div1 {
+            color: red;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #div2 {
+            border: 1px solid black;
+        }
+
+        #p4 {
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1. 字体</h1>
+    <p class="p1">测试文字</p>
+    <p class="p2">字体格式</p>
+    <p class="p3">字体复合属性</p>
+
+    <h1>2. 文本</h1>
+    <div id="div1">北凉王府龙盘虎踞于清凉山，千门万户，极土木之盛。</div>
+    <p>作为王朝硕果仅存的异姓王，在庙堂和江湖都是毁誉参半的北凉王徐骁作为一名功勋武臣，可谓得到了皇帝宝座以外所有的东西，在西北三州，他就是当之无愧的主宰，只手遮天，翻云覆雨。</p>
+
+    <div id="div2">
+        <p id="p4">行间距</p>
+    </div>
+</body>
+
+</html>
