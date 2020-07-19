@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        div p {
+            color: red;
+        }
+
+        div>p {
+            font-weight: 700;
+        }
+
+        div div {
+            font-size: 30px;
+        }
+
+        .div1 li,
+        .div1 div {
+            color: rgb(250, 15, 15);
+        }
+
+        a {
+            color: black;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: gray;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        input:focus {
+            background-color: rgba(204, 200, 200, 0.432);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>大儿子</p>
+        <span>
+            <div>孙子</div>
+        </span>
+    </div>
+
+    <div class="div1">
+        <ul>
+            <li>低一点</li>
+        </ul>
+
+        <div>你好</div>
+    </div>
+
+    <a href="#">百度</a>
+    <br>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>

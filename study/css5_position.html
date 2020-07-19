@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            background-color: #cccccc;
+            border: dashed 1px #838181;
+            margin: 10px auto;
+        }
+
+        .top {
+            height: 50px;
+            width: 1350px;
+        }
+
+        .banner {
+            height: 130px;
+            width: 1000px;
+
+        }
+
+        .main {
+            background: none;
+            border: none;
+            height: 300px;
+            width: 1000px;
+        }
+
+        .footer {
+            width: 1350px;
+            height: 140px;
+        }
+
+        .main li {
+            background-color: #cccccc;
+            border: dashed 1px #838181;
+            width: 238px;
+            margin-right: 13px;
+            float: left;
+        }
+
+        .main .up li {
+            height: 110px;
+        }
+
+        .main .down li {
+            margin-top: 20px;
+            height: 160px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top box">top</div>
+    <div class="banner box">banner</div>
+    <div class="main box">
+        <ul class="up">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li style="margin-right: 0;">4</li>
+        </ul>
+        <ul class="down">
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li style="margin-right: 0;">8</li>
+        </ul>
+    </div>
+    <div class="footer box">footer</div>
+</body>
+
+</html>
