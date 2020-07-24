@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-bottom: 500px;
+        }
+
+        .mouse {
+            width: 200px;
+            height: 100px;
+            /* default pointer move text not-allowed */
+            cursor: not-allowed;
+            background-color: antiquewhite;
+        }
+
+        input {
+            outline: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        p {
+            margin: 0 auto;
+            border: 1px solid black;
+            width: 100px;
+            height: 300px;
+            /* 禁止自动换行 */
+            white-space: nowrap;
+            /* 超出部分隐藏 */
+            overflow: hidden;
+            /* 超出部分使用省略号代替 */
+            text-overflow: ellipsis;
+        }
+
+        ul li {
+            float: left;
+            list-style: none;
+            width: 100px;
+            height: 150px;
+            border: 1px solid red;
+            /* 去除相邻盒子的边框 */
+            margin-left: -1px;
+        }
+
+        ul li:hover {
+            position: relative;
+            border-color: blue;
+        }
+
+        .box {
+            margin: auto;
+            width: 170px;
+            height: 28px;
+            border: 2px solid red;
+            font-size: 14px;
+            line-height: 28px;
+        }
+
+        .box .new {
+            float: left;
+            width: 80px;
+            height: 100%;
+            background-color: red;
+            text-align: center;
+        }
+
+        .box .old {
+            text-align: center;
+        }
+
+        i {
+            float: left;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-color: red transparent transparent transparent;
+            border-width: 28px 14px 0px 0px;
+            /* margin-left: -14px; */
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="box">
+        <span class="new">
+
+            ¥1650
+        </span>
+        <i></i>
+        <span class="old">¥5650</span>
+    </div>
+
+    <div class="mouse"></div>
+
+    <input type="text">
+    <br>
+
+    <img src="resources/tb.jpg" alt="">
+    <span>这是一张图片</span>
+
+    <p>
+        问题太长怎么办问题太长怎么办问题太长怎么办问题太长怎么办
+    </p>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <br>
+
+</body>
+
+</html>

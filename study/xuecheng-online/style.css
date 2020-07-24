@@ -233,16 +233,17 @@ a {
 }
 .box-bd li a {
     display: block; 
+    position: relative;
     width: 230px;
     height: 270px;
     margin: 0 12px 12px 0;
     background-color: #ffffff;
     border: 0;
-    /* width: 230px;
-    height: 270px; */
 }
-.box-bd li a img {
-    width: 100%;
+.box-bd .hot {
+    position: absolute;
+    top: 5px;
+    right: -5px;
 }
 .box-bd li a h4 {
     margin: 20px 20px 20px 25px;

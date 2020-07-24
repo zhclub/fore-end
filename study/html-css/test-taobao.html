@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .tb-promo {
+            position: relative;
+            height: 280px;
+            width: 520px;
+            margin: 100px auto;
+        }
+
+        .prev,
+        .next {
+            display: block;
+            position: absolute;
+            margin-top: -10px;
+            top: 140px;
+            width: 20px;
+            height: 30px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .prev {
+            background-color: rgba(0, 0, 0, .3);
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .prev span {
+            margin-left: 5px;
+            line-height: 30px;
+        }
+
+        .next {
+            text-align: right;
+            right: 0;
+            background-color: rgba(0, 0, 0, .3);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .next span {
+            margin-right: 5px;
+            line-height: 30px;
+        }
+
+        .promo-nav {
+            position: absolute;
+            left: 50%;
+            bottom: 13px;
+            margin-left: -35px;
+            width: 70px;
+            height: 14px;
+            background-color: rgba(255, 255, 255, .5);
+            border-radius: 7px;
+            text-align: center;
+        }
+
+        .promo-nav li {
+            float: left;
+            margin: 3px 3px;
+            width: 8px;
+            height: 8px;
+            background-color: #ffffff;
+            border-radius: 100%;
+        }
+
+        .promo-nav .selected {
+            background-color: #ff3900;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo">
+        <img src="resources/tb.jpg" alt="">
+
+        <a href="#" class="prev">
+            <span>&lt;</span>
+        </a>
+
+        <a href="#" class="next">
+            <span>&gt;</span>
+        </a>
+
+        <ul class="promo-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>
