@@ -188,11 +188,16 @@
 }
 .navitems {
     float: left;
+    margin-left: 17px;
     height: 46px;
-    line-height: 46px;
     color: #333333;
 }
 .navitems li {
-    padding-left: 48px;
     float: left;
+}
+.navitems li a {
+    display: block;
+    padding: 0 24px;
+    height: 46px;
+    line-height: 46px;
 }
